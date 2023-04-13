@@ -44,7 +44,7 @@ Testing data is also provided as a list of inputs but here you can choose whethe
 The output of either testing function can be difficult to read. You can make it easier to read if you print each result on its own line:
 
 ```python
-for triple in nn.test(testing_data):
+for triple in nn.test(testing_data):    
     print(triple)
 ```
 
