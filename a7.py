@@ -1,5 +1,4 @@
 from neural import NeuralNet
-
 print("\n\nTraining SQ\n\n")
 sq_training_data = [
     ([0.2], [0.04]),
@@ -60,9 +59,16 @@ test_data = [
     [.8, .3, .3, .8, .3],
     [.6, .3, .4, .3, .6]
 ]
+iris_data = open('iris_data.txt')
+test_data = iris_data
+
 
 print(f"case 1: {test_data[0]} evaluates to: {von.evaluate(test_data[0])}")
 print(f"case 2: {test_data[1]} evaluates to: {von.evaluate(test_data[1])}")
 print(f"case 3: {test_data[2]} evaluates to: {von.evaluate(test_data[2])}")
 print(f"case 4: {test_data[3]} evaluates to: {von.evaluate(test_data[3])}")
 print(f"case 5: {test_data[4]} evaluates to: {von.evaluate(test_data[4])}")
+
+
+housing_prices = open('housing_data.txt')
+test_data = housing_prices
